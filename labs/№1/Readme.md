@@ -65,32 +65,32 @@
     3. Які основні етапи при встановленні CentOS в текстовому режимі?
     >Готував студент Штома Д.О.
     
-    Основні етапи встановлення CentOS в текстовому режимі включають в себе:
-    - Вибір мову користувацького інтерфейсу.
-    - Вибір клавіатурної мови.
-    - Завантаження мережевих профілів.
-    - Встановлення системи.
-    - Підтвердження налаштувань і дискових партій.
-    - Введення користувача, його пароля та інших деталей доступу.
-    - Встановлення додаткових пакетів за бажанням. 
+    The main steps in installing CentOS in text mode include:
+    - Selecting the user interface language.
+    - Selecting the keyboard language.
+    - Loading network profiles.
+    - Installing the system.
+    - Confirmation of settings and disk partitions.
+    - Enter the user, his password and other access details.
+    - Installing additional packages if desired. 
     
-    Варіанти та послідовність дій можуть відрізнятися в залежності від встановлюваної версії.
+    The options and sequence of actions may differ depending on the version being installed.
     
    4. Яким чином можна доустановити графічні оболонки Gnome та KDE на CentOS, якщо вона вже встановлена в текстовому режимі (вкажіть необхідні команди та       пакети)?
     >Готував студент Штома Д.О.
     
-    Для доустановки графічних оболонок Gnome та KDE на CentOS слід виконати наступні команди та пакунки:
+    To install the Gnome and KDE desktop environments on CentOS, run the following commands and packages:
 
-    • Для встановлення Gnome:
+    - To install Gnome:
     sudo yum groupinstall "GNOME Desktop"
     sudo yum groupinstall "X Window System"
 
-    • Для встановлення KDE:
+    - To install KDE:
     sudo yum groupinstall "KDE Plasma Workspaces"
     sudo yum groupinstall "X Window System"
      
     5. Дайте коротку характеристику графічних інтерфейсів, що використовуються в різних дистрибутивах Linux відповідно до свого варіанту (порядковий номер по     журналу 30 "Оскільки такого варіанту немає я обрав 5"), табл.2.
     >Готував студент Штома Д.О.
     
-    GNOME поєднує простий та зручний інтерфейс з різними можливостями налаштування. Він містить велику кількість програм і його можна легко налаштувати до       потреб користувача. JWM (Joe's Window Manager) є простим та легким для настройки графічним інтерфейсом, що дозволяє користувачам створювати зручну панель     програм для їх відоюраження.
+    GNOME combines a simple and user-friendly interface with various customization options. It contains a large number of programs and can be easily customized to the user's needs. JWM (Joe's Window Manager) is a simple and easy to customize graphical interface that allows users to create a convenient panel of programs for their personalization.
     
