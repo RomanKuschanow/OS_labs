@@ -50,16 +50,32 @@
     1. Охарактеризуйте поняття «гіпервізор». Які бувають їх типи?
     > Готував студент Путін М.Г.
     
+    A **hypervisor** is a computer program or processor hardware that provides simultaneous and parallel execution of several virtual machines, each of which runs its own operating system, on one physical computer
+    
+    - Offline hypervisor 
+      - A standalone hypervisor is booted with a bootloader or firmware, and runs configured operating systems in separate virtual machines. 
+      - Examples: VMware ESX, PR/SM.
+    
+    - Based on the underlying OS
+      - This is a component that runs in the same ring as the kernel of the underlying OS. The guest code can run directly on the physical processor, but access to the I/O devices of the computer from the guest OS is through a second component, a normal process of the main OS - the user-level monitor.
+      - Examples: Windows Virtual PC, VMware Workstation, QEMU, Parallels, VirtualBox, OVirt.
+    
+    - Hybrid 
+      - A hybrid hypervisor consists of two parts: a thin hypervisor that controls the processor and memory, and a special service OS in a lower-level ring that runs under the hypervisor. Through the service OS, guest OSes access the physical hardware.
+      - Examples: Microsoft Virtual Server, Sun Logical Domains, Xen, Citrix XenServer, Microsoft Hyper-V.
+
+    
     2. Перерахуйте основні компоненти та можливості гіпервізорів відповідно до свого варіанту (порядковий номер по журналу), табл.1.
     >Готував студент Кушанов Р.Г.
     
-    VirtualBox – потужний гіпервізор, що має безліч переваг перед іншими гіпервізорами. Основні з них, це відкритість, кросплатформенність та велику кільість налаштувань.
+    VirtualBox is a powerful hypervisor that has many advantages over other hypervisors. The main ones are openness, cross-platform compatibility and a large number of customizations.
     
-    Основні можливості VirtualBox:
-    - вибір образу системи для встановлення
-    - гнучке налаштування методу та місця зберігання файлів віртуальної машини
-    - можливість одночасно запускати декілька машин
-    - налаштування відображення віртуальних моніторів
+    The main features of VirtualBox:
+    - selection of a system image for installation
+    - flexible configuration of the method and location of storing virtual machine files
+    - the ability to run multiple machines simultaneously
+    - customize the display of virtual monitors
+
     
 ### Хід роботи
 1. Подивіться ознайомчі відео та демонстраційні матеріали з наступних напрямків:
@@ -70,22 +86,26 @@
     5. [Встановлення оточення робочого столу KDE в CentOS.](https://www.youtube.com/watch?v=_ruIWLExaOY)
     6. [The Shell (Linux)](https://drive.google.com/open?id=0B0PV0_SM0LoDSVNPWUVRdUxaN2s)
     7. [Огляд графічних оболонок Linux](https://www.youtube.com/watch?v=lEGplwLXZ78)
+    
 2. Після перегляду відео дайте відповіді на наступні питання.
     1. Перерахуйте етапи для розгортання операційної системи на базі віртуальної машини VirtualBox.
     >Готував студент Кушанов Р.Г.
     
-    Етапи розгортання операційної системи на VirtualBox:
-    - Завантажити образ бажаної системи
-    - У гіпервізорі натиснути кнопку "Створити"
-    - Внизу вибрати "експертний режим"
-    - У розділі "Ім'я та тип ОС" Вказати образ, тип системи, її версію та місце зберігання у головній системи
-    - У розділі "Автоматична установка" за бажанням вказати дані майбутнього користувача ОС
-    - У розділі "Обладнання" задати бажані обмеження ресурсів системи
-    - У розділі "Жорсткий диск" вказати максимальний розмір та місце розміщення файлу диску ОС
-    - Натиснути "Готово" та дочекатися встановлення
+    Stages of deploying an operating system on VirtualBox:
+    - Download the image of the desired system
+    - In the hypervisor, click the "Create" button
+    - Select "Expert mode" at the bottom
+    - In the "OS name and type" section, specify the image, system type, version and storage location on the host system
+    - In the "Automatic installation" section, optionally specify the data of the future OS user
+    - In the "Hardware" section, set the desired system resource limits
+    - In the "Hard disk" section, specify the maximum size and location of the OS disk file
+    - Click "Finish" and wait for the installation
     
     2. Чи є якісь апаратні обмеження при встановленні 32- та 64-бітних ОС?
     >Готував студент Путін М.Г.
+    
+    You can install both 32-bit and 64-bit OS on a 32-bit processor
+    There are restrictions on a 64-bit processor, because you can only install a 64-bit OS on it, the processor is simply not capable of supporting lower bit depths
     
     3. Які основні етапи при встановленні CentOS в текстовому режимі?
     >Готував студент Штома Д.О.
