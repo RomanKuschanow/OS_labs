@@ -121,7 +121,7 @@
     
     The options and sequence of actions may differ depending on the version being installed.
     
-   4. Яким чином можна доустановити графічні оболонки Gnome та KDE на CentOS, якщо вона вже встановлена в текстовому режимі (вкажіть необхідні команди та       пакети)?
+   4. Яким чином можна доустановити графічні оболонки Gnome та KDE на CentOS, якщо вона вже встановлена в текстовому режимі (вкажіть необхідні команди та пакети)?
     >Готував студент Штома Д.О.
     
     To install the Gnome and KDE desktop environments on CentOS, run the following commands and packages:
@@ -138,4 +138,6 @@
     >Готував студент Штома Д.О.
     
     GNOME combines a simple and user-friendly interface with various customization options. It contains a large number of programs and can be easily customized to the user's needs. JWM (Joe's Window Manager) is a simple and easy to customize graphical interface that allows users to create a convenient panel of programs for their personalization.
-    
+   
+>Висновок:
+>>Готував студент Путін М.Г.
