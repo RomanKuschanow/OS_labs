@@ -48,18 +48,23 @@
 ### Хід роботи
 
 1. Робота в графічному режимі в ОС сімейства Linux (робота з інтернет-джерелами):
-    1. Оберіть графічну оболонку для ОС сімейства Linux, яку ви хочете розглянути. Розгляньте структуру робочого простору користувача, та опишіть основні його компоненти (***показано основні компоненти оболонки Gnome):
+    1.Розгляньте структуру робочого простору користувача Ubuntu, та опишіть основні його компоненти:
     >Готував студент Кушанов Р.Г.
-      - Закладка Applications
-      - Закладка Places
+
+      - Меню Applications: 
       - Меню System
       - Навігаційний простір Activities overview
-    *** Якщо ви обрали інший графічний інтерфейс то компоненти меню можуть бути іншими.
-    
-    
+     
+     The Application menu is located in the control panel, and looks like a square with nine dots. If you open it, a menu of installed programs will be expanded. From there, you can open them and add them to the Quick Access panel.
+     
+     The System menu is located on the right on the top panel, and contains a basic set of functions for system management: shutdown, user lock, system sound control, settings button, power saving and network connection management options.
+     
+     The Activities tab is located on the top left and allows you to switch workspaces (similar to desktops in Windows)
+     
     
     2. Запуск програм. Дослідіть можливості запуску додатків різними способами (описати спосіб і по можливості показати скріншоти):
     >Готував студент Кушанов Р.Г.
+    
       - Запуск програм через панель швидкого запуску
       - Запуск програм через пошук в меню
       - Запуск програм через віджет запуску
@@ -69,6 +74,7 @@
       
     3. Вихід з системи та завершення роботи в Linux. Як виконати в графічному інтерфейсі наступні дії (наведіть скріни):
     >Готував студент Кушанов Р.Г.
+    
       - Зміна користувача на root
       - Перезавантаження системи
       - Вимкнення системи
