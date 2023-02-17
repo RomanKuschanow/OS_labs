@@ -41,9 +41,12 @@
 
 2. Дайте визначення наступним поняттям:
 >Готував студент Путін М.Г.
-  - CLI-режим
+  - CLI-режим 
+    - CLI-mode: CLI stands for "Command Line Interface," which is a type of user interface that allows users to interact with a computer system through typed text commands. CLI-mode refers to a state or mode in which a computer system is operating solely through this type of interface, with no graphical user interface (GUI) components visible. CLI-mode is often used in server administration, software development, and other technical tasks that require fine-grained control over system processes.
   - Термінал на основі графічного інтерфейсу користувача
+    - Terminal based on the graphical user interface: A terminal is a program that allows users to access a command-line interface on a computer system. In a graphical user interface (GUI) environment, a terminal program can be used to provide a CLI-mode experience within a window or other graphical element. This type of terminal is often referred to as a "terminal emulator," since it emulates the behavior of a traditional hardware terminal (which was a physical device used to communicate with computer systems in the early days of computing). Terminal programs may offer additional features such as tabs, color coding, and copy/paste functionality.
   - Віртуальний термінал
+    - Virtual terminal: A virtual terminal (VT) is a software interface that allows multiple text-mode sessions to run concurrently on a computer system. Each virtual terminal can be thought of as a separate CLI-mode environment, with its own login prompt, command history, and other features. Virtual terminals are often used in Unix-like operating systems such as Linux, where they provide a way for multiple users to access a shared system without interfering with each other's work. In a GUI environment, virtual terminals can be accessed through a terminal emulator program, as described above.
     
 ### Хід роботи
 
@@ -119,12 +122,27 @@
     
     3. Використання комбінацій клавіш для виконання спеціальних дій.
     >Готував студент Путін М.Г.
-
+    - You can use keyboard shortcuts in TalkBack to use features such as speaking text, navigating the screen, and managing settings. Also, if you connect keyboard to phone and depending on the app, you may be able to use keyboard shortcuts to perform certain actions. For example, in Gmail, you can use the "R" key to reply to an email.
     
     
     4. Вхід у систему та завершення роботи пристрою. Особливості налаштувань живлення батареї.
     >Готував студент Путін М.Г.
+    
+    To log in to your Android phone, you will need to enter your passcode, pattern, or use biometric authentication, such as fingerprint or facial recognition, depending on how you have set up your device's security features.
 
+    To shut down your Android phone, you can press and hold the Power button until the "Power off" option appears on the screen. Tap the "Power off" option to turn off your device. If your device is unresponsive or frozen, you can try a forced restart by pressing and holding the Power and Volume Down buttons simultaneously for about 10 seconds until the device restarts.
+
+  As for battery power settings, there are several features available in the Android settings that allow you to manage and optimize your device's battery usage:
+
+    Battery Saver: This feature reduces your device's performance and limits background app activity to conserve battery life when the battery level drops below a certain threshold.
+
+    Adaptive Battery: This feature uses machine learning to optimize your device's battery usage by identifying and limiting the activity of infrequently used apps.
+
+    Battery Usage: This option shows you which apps are using the most battery power and allows you to restrict their activity when the screen is off or in the background.
+
+    Battery Optimization: This option allows you to select specific apps that you want to optimize for battery usage.
+
+    Battery Health: This option displays your device's current battery health status and provides recommendations to prolong battery life.
     
 >Висновок:
 >>Готував студент Штома Д.О.
