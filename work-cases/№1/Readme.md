@@ -1,3 +1,10 @@
+>Виконали студенти групи РПЗ-03  
+>Команда 2:
+>
+>Кушанов Р.Г.  
+>Путін М.Г.  
+>Штома Д.О.  
+
 ### What is git used for, what are the main actions and commands performed in it
 
 `git` - is a version control system used by both large companies and individual software developers. `git` allows you to conveniently save intermediate work results, for quick return to any of the stages of development, or division of labor between different specialists.
