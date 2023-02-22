@@ -175,5 +175,7 @@
 
 
 >Висновок:
-
+>
 >>Готував студент Кушанов Р.Г.
+>
+>In this lab, we learned how to work with the CLI (command line interface) of Linux-based operating systems, and learned how to write functions and use variables in CLI.
