@@ -78,16 +78,16 @@
       - Запуск програм через пошук в меню
       - Запуск програм через глобальне меню
       
-      Перший варіант:  
-      Натиснути на іконку потрібної програми та дочекатися завантаження  
+      The first option:  
+      Click on the icon of the desired program and wait for the download 
       ![Запуск через панель швидкого запуску](https://i.imgur.com/CQ0fF2R.png)
       
-      Другий варіант:  
-      Ввести у пошук назву програми та натиснути на іконку  
+      The second option:  
+      Enter the name of the program in the search and click on the icon 
       ![Запуск через пошук в меню](https://i.imgur.com/5g1fzES.png)
       
-      Третій варіант:  
-      Знайти у меню необхидну програму та натиснути на її іконку  
+      The third option:  
+      Find the program you need in the menu and click on its icon  
       ![Запуск через глобальне меню](https://i.imgur.com/lzF6xlz.png)
       
     3. Вихід з системи та завершення роботи в Linux. Як виконати в графічному інтерфейсі наступні дії (наведіть скріни):
@@ -97,22 +97,22 @@
       - Перезавантаження системи
       - Вимкнення системи
       
-      Для зміни користувача на root у графічній оболонці необхідно прописати декілька команд у консолі. Я вже їх прописав, покажу лише сам процес зміни користувача:  
-      Вийти с поточного користувача  
+      To change the user to root in the graphical shell, you need to write several commands in the console. I've already written them, so I'll only show you the process of changing the user:  
+      Log out of the current user 
       ![](https://i.imgur.com/ltpXqNM.png)
       
-      Натиснути "Not listed?"  
+      Click "Not listed?"  
       ![](https://i.imgur.com/QDQ10LP.png)
       
-      Ввести "root", та на наступному єкрані пароль  
+      Enter "root" and the password on the next screen 
       ![](https://i.imgur.com/52ocHaX.png)
       
       
-      Для перезавантаження системи необхідно натиснути на відповідну клавишу у меню системи:  
+      To restart the system, press the corresponding key in the system menu:  
       ![](https://i.imgur.com/njtSFLh.png)
       
       
-      Для вимкнення системи необхідно натиснути на відповідну клавишу у меню системи:  
+      To turn off the system, press the corresponding key in the system menu:  
       ![](https://i.imgur.com/QQTQWPN.png)
       
 2. Робота в середовищі мобільної ОС.
