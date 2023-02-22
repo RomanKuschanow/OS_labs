@@ -60,7 +60,7 @@
   
   - Для чого команді потрібні параметри та аргументи?
   
-    Argument - what the command will work with 
+    Argument - what the command will work with  
     Parameter - additional information about what exactly the command should do
   
   - Яке призначення команд ls, які параметри та аргументи вона може мати? Наведіть 3 приклади.
