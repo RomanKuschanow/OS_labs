@@ -154,7 +154,10 @@
      
      
       - “We create such variables as $var_name1, $var_name2, $var_name3, which stored our names Name1, Name2, Name3” (у реченні спочатку виводимо назви змінних, а потім їх вміст)
+      ![Alt Text](./img/img_1.jpg?raw=true "Optional Title")
+      
       - “We create such Aliases as mycal1, mycal2, mycal3, which can show our calendars: Calendar1, Calendar2, Calendar3” (у реченні спочатку виводимо назву команди-псевдонімів, потім вивід цих команд).
+      ![Alt Text](./img/img_2.jpg?raw=true "Optional Title")
       
       
       
@@ -162,15 +165,17 @@
      >Готував студент Штома Д.О.
      
      
+     
       - Чи можна завдання 2.1 та 2.2 ходу роботи виконати через інструкції керування без написання окремої функції, як це буде виглядати?
       
-      
+      ![Alt Text](./img/img_3.jpg?raw=true "Optional Title")
       
     5. Робота з командами довідки (Man Pages) в терміналі:
      >Готував студент Штома Д.О.
      
      
       - На прикладі команди uname продемонструйте як отримати довідку. На основі отриманої додаткової інформації наведіть 5 різних варіантів виводу результату інформації по даній команді з використанням 5 різних параметрів (Options)
+      ![Alt Text](./img/img_4.jpg?raw=true "Optional Title")
 
 
 
