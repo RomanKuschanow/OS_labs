@@ -37,18 +37,57 @@
 
 >Готував студент Кушанов Р.Г.
 
-| Термін англійською | Термін українською |
-|:-------------------|-------------------:|
-|||
+|    Термін англійською    |  Термін українською   |
+|:-------------------------|----------------------:|
+|Monitoring                |Контроль               |
+|Utilities                 |Утиліти                |
+|Subset                    |Підмножина             |
+|Available                 |Доступний              |
+|Running                   |Запущений              |
+|Gleaning                  |Збір                   |
+|Average                   |Середній               |
+|Interactive               |Інтерактивний          |
+|Refuse                    |непридатний            |
+|Interprocess communication|Міжпроцесна комунікація|
 
 2. Дайте відповіді на наступні питання:
   
   >Готував студент Кушанов Р.Г.
   
   - Які команди для моніторингу стану процесів ви знаєте. Як переглянути їх можливі параметри?
-  - Чи може команда ps у реальному часі відслідковувати стан процесів?
+
+    - `ps`
+    - `top`
+    - `htop`
+    - `pstree`
+    - `pgrep`
+    - `lsof`
+    - `strace`
+    
+    To view possible command options can be used the `--help` or `-h` option.  
+    For example `ps --help` or `top -h`
+  
+  - Чи може команда `ps` у реальному часі відслідковувати стан процесів?
+
+    The `ps` command shows the current state of the processes at the time it was run, if you add the `--watch` or `-w` option, then `ps` will start updating its output every few seconds.  
+    For example `ps -efw`
+  
   - За якими параметрами можливе сортування процесів в команді top? Як переключатись між ними?
+
+    - `p`
+    - `M`
+    - `T`
+    - `N`
+    - `K`
+    
+    To switch between options, you just need to press the corresponding keys on the keyboard.
+  
   - Які команди для завершення роботи процесів ви знаєте?
+
+    - `kill`
+    - `pkill`
+    - `killall`
+    - `xkill`
 
 
 ### Хід роботи
@@ -99,4 +138,5 @@
 >
 >>Готував студент Кушанов Р.Г.
 >
+>In this lab, we gained experience using various commands to control processes and monitor their status, such as: `ps`, `top`, `kill`.
 
