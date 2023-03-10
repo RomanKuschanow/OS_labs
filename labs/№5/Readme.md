@@ -40,15 +40,49 @@
 
 | Термін англійською | Термін українською |
 |:-------------------|-------------------:|
-|||
+|Store               |Зберігати           |
+|Data                |Інформація          |
+|Directories         |Каталоги            |
+|Hierarchy           |Ієрархія            |
+|Filesystem          |Файлова система     |
+|Configuration       |Конфігурація        |
+|Represent           |Представляти        |
+|Destination         |Місце призначення   |
+|Interactive         |Інтерактивний       |
+|Multiple            |Множинний           |
 
 2. Дайте відповіді на наступні питання:
   
   >Готував студент Кушанов Р.Г.
   
   - Порівняйте файлові структури Windows-подібної та Linux-подібної системи.
+
+
+    - Windows file names can contain up to 255 characters and can include spaces and special characters. In Linux, file names are case-sensitive, can contain up to 255 characters, and cannot contain spaces.
+
+    - Windows assigns a drive letter (C:, D:, etc.) to each storage device, whereas Linux treats all devices as part of the file system hierarchy.
+
+    - In Windows, file extensions are used to indicate the file type, such as .docx for a Microsoft Word document. In Linux, file extensions are optional, and file type is determined by the file's contents.
+
+    - Windows uses a hidden attribute to hide files from view, whereas Linux uses a dot (.) at the beginning of the file name to indicate that the file is hidden.
+
+    - In Windows, system files are typically located in the Windows directory, whereas in Linux, system files are located in specific directories, such as /bin or /etc.
+
+    - In Linux, each file has a set of permissions that determines who can read, write, or execute the file. Windows also has file permissions, but they are more limited and less granular than Linux permissions.
+  
   - Розкрийте поняття FHS. Як даний стандарт використовується в контексті файлових систем?
+  
+    FHS stands for the Filesystem Hierarchy Standard, which is a set of guidelines that define the directory structure of Linux and other Unix-like operating systems. The FHS was created to establish a uniform file system structure across different Linux distributions and to ensure that applications and system services can find necessary files in predictable locations.
+
+    Following the FHS guidelines ensures that applications and services can find the files and libraries they need in a consistent and predictable location. This makes it easier to manage and maintain Linux systems, and helps ensure compatibility across different Linux distributions.
+  
   - Перерахуйте основні команди для роботи з файлами та каталогами в Linux: створення, переміщення, копіювання, видалення.
+
+    - `ls` - This command lists the files and directories in the current directory.
+    - `cd` - This command changes the current working directory.
+    - `pwd` - This command prints the current working directory.
+    - `mkdir` - This command creates a new directory.
+    - `rm` - This command removes a file or directory.
 
 ### Хід роботи
 
@@ -107,28 +141,63 @@ lab5
 
 >Готував студент Кушанов Р.Г.
 
-  - команда cd /
-  - команда cd /home
-  - команда cd ~
-  - команда cd (без аргумента)
-  - команда cd ..
-  - команда cd ../..
-  - команда cd
+  - команда `cd /`
+
+    This command changes the current working directory to the root directory of the file system. This is the top-level directory that contains all other directories and files.
+  
+  - команда `cd /home`
+
+    This command changes the current working directory to the "home" directory. This is the directory where user home directories are typically located.
+  
+  - команда `cd ~`
+
+    This command changes the current working directory to the current user's home directory. The tilde (~) represents the user's home directory.
+  
+  - команда `cd` (без аргумента)
+
+    This command changes the current working directory to the user's home directory.
+  
+  - команда `cd ..`
+
+    This command moves the current working directory up one level in the directory hierarchy.
+  
+  - команда `cd ../..`
+
+    This command moves the current working directory up two levels in the directory hierarchy.
+  
+  - команда `cd`
+
+    This command changes the current working directory to the user's home directory. It is equivalent to `cd ~`.
 
 ### Контрольні запитання
 
 >Готував студент Кушанов Р.Г.
 
-1. Як можна переглянути шлях до домашньої директорії користувача за допомогою команди echo? Існує
-2 способи, наведіть обидва приклади у терміналі (відповідь є у матеріалах академії cisco на сайті netacad.com)
+1. Як можна переглянути шлях до домашньої директорії користувача за допомогою команди echo? Існує 2 способи, наведіть обидва приклади у терміналі
+
+  ![](https://i.imgur.com/DivcNIx.png)
+
 2. Чи можна переглянути вміст кореневого каталогу, перебуваючи у домашньому каталозі користувача без переходу у кореневий каталог? Продемонструйте це в командному рядку.
+
+  ![](https://i.imgur.com/L04gPtZ.png)
+
 3. Яким чином в терміналі можна додати інформацію в порожній файл?
+
+  `echo "This is some information to add to the file" > filename.txt`
+
 4. Як скопіювати та видалити існуючий каталог? Чи буде відмінність в командах, якщо каталог буде не порожній при цьому
+
+  - `cp source_directory target_directory` to copy an empty directory
+  - `cp -r source_directory target_directory` to copy a non-empty directory
+  - `rmdir directory_name` to removing an empty directory
+  - `rm -r directory_name` to remove a non-empty directory
+
 5. У якому з наведених нижче прикладів відбувається переміщення файлу? його перейменування? одночасно обидві дії?
-  - mv /work/tech/comp.png. /Desktop
-  - mv /work/tech/comp.png. /work/tech/my_car.png
-  - mv /work/tech/comp.png. /Desktop/computer.png
-  - 
+  - `mv /work/tech/comp.png. /Desktop` – moving
+  
+  - `mv /work/tech/comp.png. /work/tech/my_car.png` – renaming
+  - `mv /work/tech/comp.png. /Desktop/computer.png` – moving and renaming
+
 >Висновок:
 >
 >>Готував студент Штома Д.О.
