@@ -193,7 +193,7 @@ sshd: This is a server that allows remote connection to a computer using the SSH
 
 cron: is a domain that runs every time the system starts and is responsible for running schedules of tasks to be executed at a specific time or at a specific frequency. Cron allows you to automate routine processes and reduce the time spent manually entering commands.
 
-Translated with www.DeepL.com/Translator (free version)
+
   - відновити виконання призупиненого фонового процесу спочатку у позиції “на передньому плані” (foreground), потім ще раз його призупинити, а потім відновити його виконання у позиції “на задньому плані” (background)
    ![Alt Text](./img/img8.png?raw=true "Optional Title")
     ![Alt Text](./img/img9.png?raw=true "Optional Title")
