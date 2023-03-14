@@ -146,13 +146,60 @@
   >Готував студент Штома Д.О.
 
   - запустіть команду top, проаналізуйте отриманий в цій команді результат та охарактеризуйте найбільш активні процеси у системі;
-  - призупинити виконання команди top (треба використати комбінацію клавіш);
-  - вивести інформацію про процеси за допомогою команди ps;
-  - наведіть 5 прикладів з використанням різних параметрів команди ps (наприклад, вивести тільки системні процеси, вивести процеси конкретного користувача, вивести дерево процесів тощо). Опишіть, що саме роблять обрані Вами параметри
-  - передивіться чи є у Вас запущені фонові процеси, які саме?
-  - відновити виконання призупиненого фонового процесу спочатку у позиції “на передньому плані” (foreground), потім ще раз його призупинити, а потім відновити його виконання у позиції “на задньому плані” (background)
-  - завершити роботу даного фонового процесу
+  
+  ![Alt Text](./img/img1.png?raw=true "Optional Title")
+  
+  The top command is an interactive process monitoring utility for Linux systems. Once launched, it displays a real-time list of processes that take up the most system resources (e.g., CPU, RAM, disk space, etc.). In addition, it also provides useful information about the overall system health and resources.
+  The most active processes in the system can be identified based on the metrics that the top command provides for each process, such as
+  1) CPU: shows the percentage of CPU utilization by each process;
+  2) MEM: displays the percentage of RAM used by each process;
+  3) RES: shows the amount of RAM used by each process;
+  4) TIME+: displays the total time used by the process since startup;
+  5) COMMAND: the name of the process that is displayed on the command line.
 
+
+  - призупинити виконання команди top (треба використати комбінацію клавіш);
+  
+   ![Alt Text](./img/img2.png?raw=true "Optional Title")
+  - вивести інформацію про процеси за допомогою команди ps;
+  
+   ![Alt Text](./img/img3.png?raw=true "Optional Title")
+  - наведіть 5 прикладів з використанням різних параметрів команди ps (наприклад, вивести тільки системні процеси, вивести процеси конкретного користувача, вивести дерево процесів тощо). Опишіть, що саме роблять обрані Вами параметри
+   ![Alt Text](./img/img4.png?raw=true "Optional Title")
+    ![Alt Text](./img/img5.png?raw=true "Optional Title")
+     ![Alt Text](./img/img7a8.png?raw=true "Optional Title")
+      ![Alt Text](./img/img7.png?raw=true "Optional Title")
+       ![Alt Text](./img/img6.png?raw=true "Optional Title")
+
+ps: This is a command-line utility that allows you to view information about processes.
+
+-f: This flag indicates that full formatted information about each process will be displayed, including process ID, parent process ID, status, start time, memory information, etc.
+
+-aux: This is a combination of the two flags -a and -u. The -a flag indicates that information about all processes in the system that belong to other users, as well as those that do not have a terminal, will be displayed. The -u flag indicates that additional information about the user who started the process will be displayed.
+
+-ejH: This flag combination enables the display of the tree of processes that have been created since the system was started. The -e flag indicates that all processes in the system will be displayed, not just those owned by the current user.
+
+-u: This flag indicates that information about all users who have started processes will be displayed.
+
+  - передивіться чи є у Вас запущені фонові процеси, які саме?
+
+bash: is a command shell used to run commands from the command line. Bash is included in most Linux distributions and is the primary interface for interacting with the system.
+
+systemd: is a system manager that is responsible for managing processes, services, network, and other system resources. It runs at system startup and coordinates the actions of many other processes.
+
+init: This is an older system manager that is also used to manage processes and services on the system.
+
+sshd: This is a server that allows remote connection to a computer using the SSH protocol. It starts every time the system starts and is used to remotely manage and maintain the server.
+
+cron: is a domain that runs every time the system starts and is responsible for running schedules of tasks to be executed at a specific time or at a specific frequency. Cron allows you to automate routine processes and reduce the time spent manually entering commands.
+
+Translated with www.DeepL.com/Translator (free version)
+  - відновити виконання призупиненого фонового процесу спочатку у позиції “на передньому плані” (foreground), потім ще раз його призупинити, а потім відновити його виконання у позиції “на задньому плані” (background)
+   ![Alt Text](./img/img8.png?raw=true "Optional Title")
+    ![Alt Text](./img/img9.png?raw=true "Optional Title")
+  - завершити роботу даного фонового процесу
+  
+ ![Alt Text](./img/img10.png?raw=true "Optional Title")
 
 ### Контрольні запитання
 
@@ -197,9 +244,50 @@ The differences between the `top` and `ps` command are here:
 >Готував студент Штома Д.О.
 
 5. Які додаткові можливості реалізує htop в порівнянні з top?
-6. Опишіть компоненти вашої мобільної ОС для здійснення моніторингу запущених в системі процесів?
-7. Чи підтримує Ваша мобільна ОС термінальне керування роботою процесів, опишіть як саме.
-8. Чи можливо поставити сторонні програмні засоби, що дозволяють організувати управління та моніторинг роботою процесів у Вашому мобільному телефоні. Коротко опишіть їх.
+
+htop is an interactive process monitor for Linux systems that offers many additional features and capabilities compared to the standard top monitor. Here are a few of them:
+
+Color display: htop has a color display that makes it easier to distinguish between processes and the resources they use. Color schemes can be customized for different types of processes and resources.
+
+Interactive process management: htop allows the user to interact with processes, including the ability to stop, restart, and resume them without having to run separate commands.
+
+Process tree display: htop allows you to display a process tree that indicates the dependencies between processes and parent processes.
+
+Sorting processes: htop allows users to sort processes by various parameters such as CPU usage, memory usage, etc.
+
+Mouse support: htop supports the mouse, allowing users to interact with processes and menus using the mouse, not just the keyboard.
+
+Dynamic update: htop automatically updates the list of processes and their parameters in real time, allowing users to easily track changes in processes and resource utilization.
+
+7. Опишіть компоненти вашої мобільної ОС для здійснення моніторингу запущених в системі процесів?
+
+The Samsung Galaxy S20 FE mobile operating system includes various components that allow users to monitor and control running processes on the system. Here are some of the components that you can use to monitor running processes:
+
+Task Manager: The Samsung Galaxy S20 FE has a built-in task manager that allows users to view a list of running processes, including CPU, RAM, and other resource usage. Users can also stop or restart individual processes without the need to use third-party applications.
+
+Resource Utilization Analyzer: The Samsung Galaxy S20 FE has a built-in resource utilization analysis feature that allows users to view the overall status of resources on the system, such as memory and storage usage, device temperature, and more. This can help users understand which processes are using more resources and ensure that the device is running more efficiently.
+
+Widget monitor: The Samsung Galaxy S20 FE has a built-in widget monitor that allows users to create widgets to track resource usage and running processes in real time. Users can add widgets to their device's home screen and monitor resources and processes without having to open apps.
+
+Third-party applications: Samsung Galaxy S20 FE supports various third-party apps for monitoring and managing running processes, which can be downloaded from the Google Play Store or Samsung Galaxy Store.
+
+9. Чи підтримує Ваша мобільна ОС термінальне керування роботою процесів, опишіть як саме.
+
+Yes, the Samsung Galaxy S20 FE mobile operating system supports terminal control of processes using a built-in command shell that can be run on the device.
+
+To control processes remotely on Samsung Galaxy S20 FE, you can use the Terminal Emulator application, which allows you to interact with your mobile operating system via the command line. This application provides users with the ability to start, stop, restart, and control running processes on their device without having to use the graphical user interface.
+
+In order to open the command prompt on Samsung Galaxy S20 FE, you need to install the Terminal Emulator application from the Google Play Store or Samsung Galaxy Store, then launch it and enter the necessary commands. For example, to view the list of running processes on the device, you can enter the command "ps" in the terminal.
+
+11. Чи можливо поставити сторонні програмні засоби, що дозволяють організувати управління та моніторинг роботою процесів у Вашому мобільному телефоні. Коротко опишіть їх.
+
+Yes, you can install third-party software to organize management and monitoring of processes on your Samsung Galaxy S20 FE mobile phone. Here are some of these programs:
+
+3C Task Manager: 3C Task Manager is a powerful tool for monitoring and managing running processes on Android devices. It allows users to view a list of running processes, analyze resource usage, and manage processes with appropriate features. The program also has a number of other useful features, such as monitoring battery and storage usage, setting up auto-launching applications, and more.
+
+System Monitor: System Monitor is a simple and lightweight tool for monitoring processes on Android devices. It allows users to view a list of running processes and their resource usage, such as CPU, RAM, and storage. The program also provides users with the ability to set resource usage alerts and configure auto-launch of applications.
+
+Greenify: Greenify allows users to reduce the resource consumption of their applications and increase battery life. The program allows you to stop background processes and applications that use a lot of resources, which can reduce battery consumption and increase device performance.
 
 >Висновок:
 >
