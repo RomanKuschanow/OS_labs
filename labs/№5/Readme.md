@@ -92,8 +92,34 @@
 
 |Назва команди|Її призначення та функціональність|
 |:------------|:---------------------------------|
-|pwd          |Визначає місце знаходження користувача у файловій системі, показує поточну робочу директорію (print working directory)|
-|cd Documents |Команда cd здійснює перехід до каталогу, який у неї вказаний як аргумент. В даному випадку це каталог Documents|
+|`pwd  `        |Визначає місце знаходження користувача у файловій системі, показує поточну робочу директорію (print working directory)|
+|`cd Documents` |Команда cd здійснює перехід до каталогу, який у неї вказаний як аргумент. В даному випадку це каталог Documents|
+|` echo  ~ ~sysadmin ~root ~mail ~nobody `| Use the echo command below to display some other examples of using the tilde as part of the path |
+|` cd .. `| Use a relative path to change to the directory above the current directory |
+| `cd ../dict `| Use a relative path to change up one level from the current directory and then down into the dict directory |
+|`ls` | To list the contents of the current directory, use the ls command |
+|`ls -a` | Not all files are displayed by default. There are files, called hidden files, that are not displayed by default. To display all files, including hidden files, use the -a option to the ls command |
+| `ls -R` | Sometimes you want to see not only the contents of a directory, but also the contents of the subdirectories. You can use the -R option to accomplish this |
+| `ls -d` | You can use file globbing (wildcards) to limit which files or directories you see. For example, the * character can match "zero or more of any characters" in a filename. Execute the following command to display only the files that begin with the letter s in the /etc directory |
+| `ls -d /etc/????` | The ? character can be used to match exactly 1 character in a file name. Execute the following command to display all of the files in the /etc directory that are exactly four characters long |
+| `ls –d /etc/[abcd]*` | By using square brackets [ ] you can specify a single character to match from a set of characters. Execute the following command to display all of the files in the /etc directory that begin with the letters a, b, c or d |
+| `echo *` | Use the following echo command to display all filenames in the current directory that match the glob pattern * |
+| `echo D*  
+  echo P*` | The following commands will display all the files in the current directory that start with the letter D, and the letter P |
+| `echo *s` | The asterisk * can be used anywhere in the string. The following command will display all the files in your current directory that end in the letter s |
+| `echo ??????` | Since each question mark matches one unknown character, typing six of them will match six-character filenames. Type the following to display the filenames that are exactly six characters long |
+| `echo D????????` | Using the question mark with other characters will limit the matches. Type the following to display the file names that start with the letter D and are exactly nine characters long |
+| `echo ?????*s` | Wildcards or glob characters can be combined together. The following command will display file names that are at least six characters long and end in the letter s |
+| `mkdir Myetc` | Naturally, the directory must be created before files can be added to it. In this example we will use the default settings for mkdir to create the “Myetc” directory. Options are available for the mkdir command to set security, permissions and other attributes of a new directory. |
+| `rm -r Myetc` | To remove a directory, use the -r option to the rm command: |
+|`touch premove` | Creates an empty file called premove |
+| `mv premove postmove` | This command “cuts” the premove file and “pastes” it to a file called postmove |
+| `cp /etc/hosts hosts` | Make a copy of the /etc/hosts file and place it in the current directory. Then, list the contents of the current directory before and after the copy |
+| `cp –v /etc/hosts hosts` | Next, you will remove the file, then copy it again, but have the system tell you what is being done. This can be achieved using the -v or --verbose option. Enter the following commands |
+| `cp –p hosts /home/sysadmin` | Enter the following commands to copy from the source directory and preserve file attributes by using the -p option |
+| `echo [D-P]\*  
+  echo [!D-P]\*` | In these next examples, a range of characters will be specified. In the first example, the first character of the file name can be any character starting at D and ending at P. In the second example, this range of characters is negated, meaning any single character will match as long as it is not between the letters D and P |
+| `rm postmove`  | Removes postmove file |
 
 2. Робота в в терміналі (закріплення практичних навичок)
 
@@ -102,37 +128,43 @@
 - Визначте ваш поточний робочий каталог;
 - Перейдіть до кореневого каталогу та визначте Ваш поточний робочий каталог (дві команди);
 - Перегляньте вміст поточного каталогу у довгому форматі (скористайтесь відповідним ключем команди ls);
-- Перейдіть до каталогу /usr/share та визначте Ваш поточний робочий каталог (дві команди)
+- Перейдіть до каталогу /usr/share та визначте Ваш поточний робочий каталог (дві команди)  
+  ![Alt Text](./img/img1.png?raw=true "Optional Title")
+    
 - Перегляньте вміст поточного каталогу включаючи і приховані файли (hidden files)(скористайтесь відповідним ключем команди ls);
+
+  ![Alt Text](./img/img2.png?raw=true "Optional Title")
 - Перейдіть до каталогу /etc;
 - Перегляньте вміст даного каталогу, але щоб виводило тільки назви файлів, що починаються з літери вашого імені;
 - Перегляньте вміст даного каталогу, але щоб виводило тільки файли, назви яких складаються з 6 літер;
 - Перегляньте вміст даного каталогу, але щоб виводило тільки файли, назви яких закінчуються на літери ваших імен, наприклад якщо ваші імена Ivan, Anna, Maks, то вибірку робиму, щоб назви файлів закінчувались на літери [i,a,m];
 - Перейдіть до домашнього каталогу поточного користувача та перегляньте його вміст у рекурсивному (зворотному до алфавітного) форматі (виконати цю дію через конвеєр команд);
-- В поточній директорії створити директорію з назвою вашої групи;
+  ![Alt Text](./img/img3.png?raw=true "Optional Title")
+
 
 >Готував студент Штома Д.О.
 
+- В поточній директорії створити директорію з назвою вашої групи;
 - Переглянути оновлений вміст домашнього каталогу поточного користувача. Скористайтесь ключем -r команди ls, яку інформацію ви отримаєте?
 - Перейдіть у створену вами директорію з назвою Вашої групи та створіть у ній порожній файл
 lab5
 - Створити в даній директорії 3 директорії з прізвищами студентів вашої команди surname1, surname2, surname3* (команда mkdir мульти аргумента, тому всі три каталоги можна створити однією командою);
 - Перейдіть у перший підкаталог surname1 та створіть порожній файл з ім'ям першого студента name1;
-- За допомогою команди echo &quot;Hello, my name is Name1&quot; &gt; name1 внесіть у цей файл дані про
-студента (символ &gt; дозволяє вивід команди echo перенаправити одразу у файл name1;
+- За допомогою команди echo "Hello, my name is Name1" > name1 внесіть у цей файл дані про
+студента (символ > дозволяє вивід команди echo перенаправити одразу у файл name1;
 - Перегляньте вміст файлу name1 за допомогою команди cat name1 (має містити щойно введену Вами інформацію)
-- Зробіть копію першого файлу name1 та перейменуйте її у файл з другим ім&#39;ям студенту Вашої команди name2;
-- Перегляньте вміст каталогу, обидва файли мають з&#39;явитися;
+- Зробіть копію першого файлу name1 та перейменуйте її у файл з другим ім'ям студенту Вашої команди name2;
+- Перегляньте вміст каталогу, обидва файли мають з'явитися;
 - Перегляньте вміст другого файлу cat name2 (він має поки що містити повну копію вмісту файлу name1)
-- Замініть зміст файлу name2, щоб він містив відповідне ім&#39;я другого студента за допомогою команди echo &quot;Hello, my name is Name2&quot; &gt; name2
+- Замініть зміст файлу name2, щоб він містив відповідне ім'я другого студента за допомогою команди echo"Hello, my name is Name2" > name2
 - Перегляньте вміст другого файлу cat name2 (він вже має містити оновлену інформацію)
 - Перемістіть файл name2 у директорію surname2;
-- Зробіть копію першого файлу name1 та перейменуйте її у файл з третім ім&#39;ям студенту Вашої команди name3;
+- Зробіть копію першого файлу name1 та перейменуйте її у файл з третім ім'ям студенту Вашої команди name3;
 - Перемістіть файл name3 у директорію surname3;
 - Перейдіть до директорії surname3;
 - Перегляньте вміст третього файлу командою cat name3 (він має містити дані про другого
 студента)
-- Замініть зміст файлу name3, щоб він містив відповідне ім&#39;я третього студента за допомогою команди echo &quot;Hello, my name is Name3&quot; &gt; name3
+- Замініть зміст файлу name3, щоб він містив відповідне ім'я третього студента за допомогою команди echo "Hello, my name is Name3" > name3
 - Перегляньте вміст файлу за допомогою cat name3 (він вже має містити оновлену інформацію)
 - Поверніться до домашнього каталогу користувача;
 - Перегляньте вміст даного каталогу, але щоб виводило тільки Ваш підкаталог з назвою групи та весь його вміст (підкаталоги surname1, surname2, surname3 та файли name1, name2, name3) до того ж файли та катлоги були відкоремлені кольорами (скористайтесь відповідним ключем -R команди ls та не забудьте використати спеціальний glob-шаблон [імя каталогу]*)
