@@ -92,7 +92,7 @@
 
 |Назва команди|Її призначення та функціональність|
 |:------------|:---------------------------------|
-|`pwd  `        |Визначає місце знаходження користувача у файловій системі, показує поточну робочу директорію (print working directory)|
+|`pwd  `      |Визначає місце знаходження користувача у файловій системі, показує поточну робочу директорію (print working directory)|
 |`cd Documents` |Команда cd здійснює перехід до каталогу, який у неї вказаний як аргумент. В даному випадку це каталог Documents|
 |` echo  ~ ~sysadmin ~root ~mail ~nobody `| Use the echo command below to display some other examples of using the tilde as part of the path |
 |` cd .. `| Use a relative path to change to the directory above the current directory |
@@ -169,6 +169,15 @@ lab5
 - Поверніться до домашнього каталогу користувача;
 - Перегляньте вміст даного каталогу, але щоб виводило тільки Ваш підкаталог з назвою групи та весь його вміст (підкаталоги surname1, surname2, surname3 та файли name1, name2, name3) до того ж файли та катлоги були відкоремлені кольорами (скористайтесь відповідним ключем -R команди ls та не забудьте використати спеціальний glob-шаблон [імя каталогу]*)
 
+
+![Picture](./img/img9.png?raw=true "Optional Title")
+![Alt Text](./img/img5.png?raw=true "Optional Title")
+![Alt Text](./img/img6.png?raw=true "Optional Title")
+![Alt Text](./img/img7.png?raw=true "Optional Title")
+
+![Alt Text](./img/img8.png?raw=true "Optional Title")
+
+
 3. Опишіть дії, які виконують команди для переміщення по системі каталогів:
 
 >Готував студент Кушанов Р.Г.
@@ -231,7 +240,7 @@ lab5
   - `mv /work/tech/comp.png. /Desktop/computer.png` – moving and renaming
 
 >Висновок:
->
+>In this lab, we gained practical skills in working with the Bash shell, learned the basic commands for navigating the file system, learned basic commands for managing files and directories.
 >>Готував студент Штома Д.О.
->
+
 
