@@ -10,7 +10,40 @@
 >Готував студент Кушанов Р.Г.
 
   - Клонування вашої віртуальної робочої ОС (Work-case 2). Яким чином це можна зробити? Продемонструйте всі етапи;
+  
+  ![](https://i.imgur.com/DugCqfn.png)  
+  At the first stage, you need to select the "images" section  
+  
+  ![](https://i.imgur.com/cbaoaT4.png)  
+  Next, you need to click on the "Clone" button
+  
+  ![](https://i.imgur.com/uWFQBVC.png)  
+  This screen should have a name for the clone and a path for its location
+  
+  ![](https://i.imgur.com/RXrhS88.png)  
+  Next, you need to select the type of cloning
+  
+  ![](https://i.imgur.com/Ppd4taL.png)  
+  And then wait for the cloning to finish
+  
+  ![](https://i.imgur.com/ZLTecVT.png)  
+  The system clone will appear in the list of available systems
+  
+  
   - Може виникнути необхідність перенесення (клонування) ОС у інше віртуальне середовище. Які треба виконати дії для експорту вашої віртуальної робочої ОС?
+  
+  ![](https://i.imgur.com/YkT41kS.png)  
+  From the File menu, select "Export Configurations"
+  
+  ![](https://i.imgur.com/sc08qwh.png)  
+  In the window that appears, select the system to export
+  
+  ![](https://i.imgur.com/nWfYXRC.png)  
+  Next, choose a location
+  
+  ![](https://i.imgur.com/R1lJ4Uk.png)  
+  In this menu click "done"
+  
 
 2. В ході роботи одна робоча віртуальна машина може взаємодіяти з іншою. Для цього необхідно між ними розгорнути мережу. Опишіть які типи організації мережевих з’єднань підтримуються в середовищі віртуальних машин, в чому особливість кожного з них:
 
