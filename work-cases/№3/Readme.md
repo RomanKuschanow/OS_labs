@@ -59,9 +59,34 @@
 >Готував студент Кушанов Р.Г.
 
   - Продемонструйте базові команди для налаштування мережевих параметрів ОС, поясніть, що вони виконують.
+
+    ![](https://i.imgur.com/dZUkh3c.png)    
+    ![](https://i.imgur.com/573btCd.png)  
+    Both vital machines have two adapters, 1 for internet access, the other for LAN communication
+
   - Обидві ОС мають мати вихід у мережу Інтернет. Відкрийте браузер та перегляньте будь-яке відео в youtube
+
+    ![](https://i.imgur.com/1vqQi6n.png)  
+    Both machines have Internet access
+
   - Налаштуйте та продемонструйте обмін повідомленнями між двома ОС по локальній мережі. Які команди в терміналі при цьому необхідно ввести?
+    
+    ![](https://i.imgur.com/Ef0fNv3.png)  
+    Для обмена сообщениями необходимо на одной машине начать слушать ip4 аддресс с нужним портом, а на другой открыть этот порт для передачи данних
+    
   - Налаштуйте спільну мережеву папку для обох ОС. Спробуйте скопіювати файли з цієї директорії в домашній каталог користувача (віртуальна робоча ОС) та на робочій стіл (клон віртуальної робочої ОС).
+
+    ![](https://i.imgur.com/WxYpfgJ.png)  
+    To create a shared directory, you need to create a folder, and select "local network share" in the context menu
+    
+    ![](https://i.imgur.com/aILj8Ei.png)
+    On another machine, in the "other locations" section, a folder will appear with the name of the computer from which the shared folder was made
+    
+    ![](https://i.imgur.com/NEjJsUO.png)  
+    I moved the tree picture to a folder
+    
+    ![](https://i.imgur.com/RzjdMz6.png)
+    And she showed up at her original location
  
 4. Яким чином можна організувати обмін інформацією між вашою основною ОС (наприклад Windows) та віртуальними ОС? Скопіюйте довільний аудіо-файл з вашої основної ОС на робочий стіл віртуальної ОС та її клона. Як зробити зворотну дію, коли треба документ з робочого столу віртуальної ОС скопіювати до вашої основної робочої ОС?
 
