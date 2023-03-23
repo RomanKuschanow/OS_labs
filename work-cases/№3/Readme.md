@@ -49,10 +49,16 @@
 
 >Готував студент Путін М.Г.
 
-  - Трансляція мережевих адрес (NAT);
-  - Мережевий міст (Bridged);
-  - Віртуальний адаптер хоста (Host-only);
-  - Внутрішня мережа (Internal Network).
+  - Трансляція мережевих адрес (NAT):  
+  NAT (Network Address Translation) network allows virtual machines to communicate with the external network, but not with each other. This is useful when you want to isolate virtual machines from each other while still providing them with internet access.
+  - Мережевий міст (Bridged):
+    This type of network connection allows virtual machines to communicate with the external network and other machines on the same network as the host machine. In a bridged network, the virtual machine is connected to the physical network adapter of the host machine, which allows it to use the same network as the host.
+  - Віртуальний адаптер хоста (Host-only):  
+    This is a private network that only allows communication between the virtual machines and the host machine. Host-only networks are useful when you want to test network configurations or services without exposing them to the outside world.
+  - Внутрішня мережа (Internal Network):  
+    This type of network connection only allows communication between virtual machines on the same host machine. It does not allow communication with the external network or the host machine.  
+      
+    Each type of network connection has its own unique features and use cases, depending on the specific needs of the virtual machine environment. Host-only networks are useful for testing and development, while bridged networks are useful for production environments where virtual machines need access to the external network. NAT networks are useful for providing internet access to virtual machines while maintaining isolation, and internal networks are useful for creating private networks between virtual machines on the same host.
  
 3. Розгорніть мережу між вашою робочою ОС та її клоном (завдання 1):
 
