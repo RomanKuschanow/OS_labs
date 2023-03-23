@@ -97,3 +97,22 @@
 4. Яким чином можна організувати обмін інформацією між вашою основною ОС (наприклад Windows) та віртуальними ОС? Скопіюйте довільний аудіо-файл з вашої основної ОС на робочий стіл віртуальної ОС та її клона. Як зробити зворотну дію, коли треба документ з робочого столу віртуальної ОС скопіювати до вашої основної робочої ОС?
 
 >Готував студент Штома Д.О.
+
+To organize the exchange of information between the main Windows OS and the Ubuntu virtual OS using Guest Editions, you need to configure the virtual machine by installing Guest Additions. You can do this by going to the Devices menu in the virtual machine window and selecting Insert Guest Additions CD image.
+Once Guest Additions is installed, you can use the file and clipboard sharing features. To copy an audio file from the main OS to the Ubuntu virtual OS desktop, you need to open the folder containing the audio file on the main OS and then copy the file to the clipboard (by right-clicking and selecting "Copy" or using the keyboard shortcut Ctrl+C).
+Then open the Ubuntu virtual OS and go to the desktop. Right-click and select "Paste" or use the keyboard shortcut Ctrl+V to paste the audio file from the clipboard to the desktop of the virtual OS.
+To copy a document from the virtual OS desktop to the main Windows OS, you need to open the folder where the document is stored on the virtual OS, copy the file to the clipboard, and then switch to the main OS and paste the file from the clipboard into the desired folder on the main OS. To do this, you can open the folder on the main OS and right-click, select "Paste" or use the keyboard shortcut Ctrl+V.
+
+Step 1 : Go to the settings
+![](https://i.imgur.com/dMRxa7F.png)  
+
+Step 2: Сreate a shared folder
+![](https://i.imgur.com/rt4o2TZ.png)  
+
+Step 3: Аdd Guest Additions
+![](https://i.imgur.com/LlmjgPH.png)  
+
+Unfortunately, due to an error, I cannot demonstrate the result of performing ooperations :(
+Next, we would have to unzip and install Guest Additions, after which a shared chars folder would appear on the main and secondary operating system to exchange files.
+
+
