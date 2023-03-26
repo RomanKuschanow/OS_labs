@@ -39,17 +39,95 @@
 
 | Термін англійською | Термін українською |
 |:-------------------|-------------------:|
-|||
+|compress            |            стискати|
+|directories         |               папки|
+|archiving           |          архівувати|
+|formatted           |     відформатований|
+|lossless            |           без втрат|
+|utility             |          корисність|
+|sequential          |         послідовний|
+|deflate             |               здути|
+|protocol            |            протокол|
+|advantages          |            переваги|
 
 2. Дайте відповіді на наступні питання:
   
   >Готував студент Кушанов Р.Г.
   
-  - Яке призначення команд tar, xz, zip, bzip, gzip? Зробіть короткий опис кожної команди та виділіть їх основні параметри. Яким чином їх можна встановити.
+  - Яке призначення команд `tar`, `xz`, `zip`, `bzip`, `gzip`? Зробіть короткий опис кожної команди та виділіть їх основні параметри. Яким чином їх можна встановити.
+  
+  These commands are used to archive and compress files
+  
+  The tar (Tape Archive) command is used to archive files and directories as a single file. Main parameters:
+
+  `-c`: create an archive
+  `-x`: unzip the archive
+  `-f`: specify the name of the archive file
+  `-v`: display the list of files to be archived/unzipped
+  
+  `tar` is usually installed with the system, but additional features of the command, such as support for different archive formats, can be installed using additional packages.
+  
+  The xz command is used to compress files. It uses the LZMA compression algorithm, which provides a high level of compression. Main parameters:
+
+  `-c`: output the result to standard output
+  `-d`: extract the file
+  `-z`: use a gzip-like compression algorithm
+
+  xz is usually installed with the system, but can be installed separately via your OS's package manager.
+  
+ The `zip` command is used to archive and compress files. It uses the ZIP format, which is one of the most common archive formats in the Windows environment. Main parameters:
+
+  `-r`: recursively add files from subdirectories
+  `-u`: update the archive, adding only new files to it
+  `-d`: delete file from archive
+  
   - Наведіть три приклади реалізації архівування та стискання даних різними командами.
+  
+  `tar -czvf myfolder.tar.gz myfolder`
+  `zip myfile.zip myfile.txt`
+  `bzip2 -dk myarchive.bz2`
+  
   - Яке призначення команд cat, less, more, head and tail? Зробіть короткий опис кожної команди та виділіть їх основні параметри. Яким чином їх можна встановити
+  
+  These commands are used to view and edit text files. The main purpose of these commands is to allow the user to view and edit large files without having to open them in an editor.
+  
+  The command `cat` (Concatenate) is used to output the contents of text files to the console. Main parameters:
+
+  `-n`: output line numbers
+  `-s`: merge consecutive empty lines into one
+  `-E`: show the end of each line with a $ character
+  
+  `cat` is usually installed with the system, but can be installed separately via your OS's package manager.
+  
+  The `less` command is used to view text files, allowing the user to easily navigate through the file. Main parameters:
+
+  `-N`: display line numbers
+  `-S`: disable wrapping of lines that do not fit in the window
+  `-F`: Automatically exit if the entire file is displayed
+  
+  `less` is usually installed with the system, but can be installed separately through your OS's package manager.
+  
+  The more command is similar to `less', but usually less powerful. It is used to gradually output text files to the console. Main parameters:
+
+  `-n`: display line numbers
+  `-d`: Wait for a command from the user before going to the next screen
+  `-c`: clear the screen before displaying the next screen
+  
+  `more` is usually installed with the system, but can be installed separately via your OS's package manager.
+
+  The `head` command is used to output the first few lines
+  
   - Поясніть принципи роботи командної оболонки з каналами, потоками та фільтрами
+  
+  The shell in the Linux operating system has built-in support for handling I/O streams and using pipes to transfer data between processes. This allows you to combine different commands to get more complex data processing results.
+
+  Channels allow the output of one command to be passed as input to another command. For example, if we want to list the files in the current directory and sort it alphabetically, we can use the channel | to pass the output of the `ls` command as input to the `sort` command
+  
+  I/O streams (stdin, stdout, stderr) are standard data streams used to interact with commands on the command line. The shell automatically binds standard input (stdin) to the keyboard, and standard output (stdout) and standard error stream (stderr) to the screen.
+  
   - Яке призначення команди grep?
+  
+  The `grep` (Global Regular Expression Print) command is used to search input data using a specific string or regular expression.
 
 ### Хід роботи
 
@@ -136,10 +214,29 @@
 >Готував студент Кушанов Р.Г.
 
 1. Надайте порівняльну характеристику процесам стискання та архівування.
+
+  Archiving is the process of creating a single file that contains multiple files or directories. Archiving is typically used to store or transfer a group of files in order to preserve their structure and relationships between them.
+  
+  Compression is the process of reducing the size of a file or data by removing redundant information. Compression can be lossless or lossy.
+
 2. Які програми, окрім наведених в роботі, можуть використовуватись для стискання та архівування файлів та каталогів в ОС Linux? Наведіть приклади та їх короткий опис.
+
+  `7zip` is an open source program that supports many compression and archiving formats, including 7z, ZIP, TAR, and WIM. It has a high degree of compression and can work with encrypted archives.
+
+  `PeaZip` is an open source program that supports many compression and archiving formats, including 7z, ZIP, TAR, GZ, and XZ. It has a graphical user interface and can be used to create archives, unpack and view their contents.
+
+  `rar` is a program for compressing and archiving files that supports the RAR format. It has a high degree of compression and can work with encrypted archives.
+
 3. Порівняйте алгоритми стискання, що використовуються в командах (програмах), використовуваних в Linux. Які з алгоритмів можна вважати найшвидшим та найефективнішим?
+
+|Алгоритм стискання|Швидкість|Ступінь стиснення  |Використання ресурсів|
+|:-----------------|:--------|:------------------|:--------------------|
+|gzip              |Швидкий  |Низький            |Низьке               |
+|bzip2             |Помірний |Високий            |Високе               |
+|xz                |Повільний|Надзвичайно високий|Високе               |
 
 >Висновок:
 >>Готував студент Кушанов Р.Г.
 >
+>In this lab, we learned about the existing ways to compress and archive files in Linux, and tried them out in practice.
 
