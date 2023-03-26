@@ -59,10 +59,26 @@
 
 | Назва команди | Її призначення та функціональність |
 |:--------------|:-----------------------------------|
-|mkdir mybackups|Створення нової директорії mybackups у домашньому каталозі користувача|
-|tar -cvf mybackups/udev.tar /etc/udev|Команда tar використовується для об’єднання кількох файлів в один файл. В даному випадку вміст директорії /etc/udev буде збережено в архів udev.tar у директорії mybackups. Параметр -c повідомляє команді tar створити файл tar. Параметр -v означає "verbose", який наказує команді tar продемонструвати, що вона робить. Параметр -f використовується для вказівки назви файлу tar.|
-|||
-|||
+|`mkdir mybackups`|Створення нової директорії mybackups у домашньому каталозі користувача|
+| `tar -cvf mybackups/udev.tar /etc/udev `|Команда tar використовується для об’єднання кількох файлів в один файл. В даному випадку вміст директорії /etc/udev буде збережено в архів udev.tar у директорії mybackups. Параметр -c повідомляє команді tar створити файл tar. Параметр -v означає "verbose", який наказує команді tar продемонструвати, що вона робить. Параметр -f використовується для вказівки назви файлу tar.|
+| `tar` | Originally, tar was used to archive data on tape devices. But it also allows you to write the output to a file, and this method has become widely used in Linux for its intended purpose |
+| `gzip` | The gzip command is designed for lossless data compression using the utility of the same name, which uses the Lempel-Ziv algorithm (LZ77) with Huffman encoding. The purpose of using this utility is to save disk space. |
+| `bzip2` | The bzip2 command is designed to compress data without loss using a utility that uses the Barrows-Wheeler algorithm. The purpose of using this utility is to save disk space. |
+| `xz` | the XZXZ Utils command is a tool for developing high compression ratios for the POSIX platform |
+| `unzx` | command in Linux terminal is used to extract files from archives created by zx |
+| `zip` | This command includes only files ending in .c in the current directory and its subdirectories. |
+| `unzip` | Unzip files from the ZIP archive (a / s) (you can specify several through a space |
+| `>` | Used to redirect the `stdout` from first command to rewrite the file |
+| `>>` | Used to redirect the `stdout` from first command to append the new output in the end of file |
+| find | command starts the search in the directory specified and recursively search all of the subdirectories. |
+| `2>` | Used to redirect the `stderr` error message to a file |
+| `tr` | Used to translate the characters |
+| `cut` | Used to extract specific columns or fields of text from a file or input stream. |
+| `more` and `less`| Allows for the user to the view data a "page" or a line at a time. |
+| `head` | Used to display the top part of a file. By default, the head command will display the first ten lines of the file |
+| `tail` | displays the last ten lines of the file |
+| `grep` | Will print the entire line containing the match in file, that given by an argument, that can use some of regular expressions|
+| `egrep` | Will print the entire line containing the match in file, that given by an argument, that can use all parts of regular expressions |
 
 2. Ознайомтесь з командою tar та за її допомогою виконати у терміналі наступні дії:
 
@@ -72,10 +88,13 @@
   - створити файл з розширенням .tar, що складається з декількох файлів і каталогів одночасно;
   - перегляду вмісту файлу;
   - витягти вміст файлу tar;
+ ![Alt Text](./img/img_1.png?raw=true "Optional Title")
   - створити архівний файл tar, стиснений за допомогою bzip;
   - витягти вміст файлу tar bzip;
+  ![Alt Text](./img/img_2.png?raw=true "Optional Title")
   - створити архівний tar файл, стисненого за допомогою gzip;
   - витягти вміст файлу tar gzip.
+  ![Alt Text](./img/img_3.png?raw=true "Optional Title")
 
 3. Як буде відбуватись перенаправлення потоків виведення в bash для наступних дій з командами
 (позначено як cmd) та файлами (позначено як file):
