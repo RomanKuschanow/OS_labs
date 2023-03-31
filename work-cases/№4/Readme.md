@@ -31,3 +31,21 @@
 4. Яким чином можна встановити нові програми через магазини додатків та менеджери пакетів у графічному середовищі. Наведіть свої приклади.
 
 >Готував студент Кушанов Р.Г.
+
+![](https://i.imgur.com/Dlh2GLh.png)  
+To install packages through the graphical shell, you need to open the "Ubuntu Software" application
+
+![](https://i.imgur.com/BzZFX3s.png)  
+Next, click on the search icon
+
+![](https://i.imgur.com/BITqoAS.png)  
+And enter the name of the required application
+
+![](https://i.imgur.com/nYQUlTs.png)  
+By clicking on the desired application, the page of this application will be displayed, where you can install it by pressing the "Install" button
+
+![](https://i.imgur.com/v8VpOmy.png)  
+There is also an option through the terminal: enter the command `apt install <name>`
+
+![](https://i.imgur.com/RXPxQHe.png)  
+And to the question "whether to start the installation" we answer `y`
