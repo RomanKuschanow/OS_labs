@@ -16,10 +16,32 @@
 
 >Готував студент Штома Д.О.
 
-  - Пошук, скачування та установка необхідних пакетів, яких у Вашій системі немає (зі сховища по замовчуванню, з нового репозиторію тощо).
-  - Перегляд інформації про встановлені та доступні пакети.
-  - Видалення непотрібних або застарілих пакетів.
-  - Оновлення менеджера пакетів.
+  In Ubuntu and other Linux distributions that use the APT (Advanced Package Tool) package manager, you can use the following commands to perform the tasks described above:
+
+Search for packages: 
+- sudo apt search package_name
+
+Downloading packages: 
+- sudo apt download package_name
+
+Installing packages: 
+- sudo apt install package_name
+
+Adding a new repository: 
+- sudo add-apt-repository repository - sudo apt update
+
+Viewing installed packages:
+- dpkg --list
+
+View available packages: 
+- sudo apt-cache pkgnames
+
+Remove packages: 
+- sudo apt remove package_name 
+- sudo apt autoremove
+
+Update the package manager and installed packages:
+-sudo apt update -sudo apt upgrade
 
 3. Встановіть у терміналі через менеджер пакетів на свою систему:
 
