@@ -55,23 +55,23 @@
 
   1. Охарактеризуйте поняття скриптового сценарію у командній оболонці.
   
-    A shell script is a set of commands that are executed sequentially while the script is running. Scripts are commonly used to automate routine tasks to reduce the effort and time spent on performing such tasks manually. Scripts can contain branches, loops, conditional expressions, and other constructs that provide script execution flexibility and functionality.
+  A shell script is a set of commands that are executed sequentially while the script is running. Scripts are commonly used to automate routine tasks to reduce the effort and time spent on performing such tasks manually. Scripts can contain branches, loops, conditional expressions, and other constructs that provide script execution flexibility and functionality.
   
   2. Яким чином створюються та редагуються скрипти, що треба зробити щоб запустити скрипт?
   
-    Scripts are created in a text editor such as Vim or Nano and saved with the extension ".sh" to indicate that it is a shell script. Scripts can be run using the `sh` or `bash` command, specifying the path to the script file. Before running the script, you need to make sure that it has execute rights using the `chmod` command.
+  Scripts are created in a text editor such as Vim or Nano and saved with the extension ".sh" to indicate that it is a shell script. Scripts can be run using the `sh` or `bash` command, specifying the path to the script file. Before running the script, you need to make sure that it has execute rights using the `chmod` command.
   
   3. Які основні компоненти материнської плати ви знаєте?
   
-    Some of the main components of a motherboard include the processor, chipset, BIOS/UEFI, RAM and expansion slots, I/O controllers (including keyboard, mouse, USB and Ethernet ports), and GPU (in the case of embedded graphic subsystems).
+  Some of the main components of a motherboard include the processor, chipset, BIOS/UEFI, RAM and expansion slots, I/O controllers (including keyboard, mouse, USB and Ethernet ports), and GPU (in the case of embedded graphic subsystems).
   
   4. Коротко охарактеризуйте для яких пристроїв оперують поняттями MBR та GPT?
   
-    MBR and GPT are disk mapping table formats. MBR (Master Boot Record) is an older format that can only support up to 4 primary partitions, one of which can be an extended partition. GPT (GUID Partition Table) is a newer format that can support up to 128 partitions and has no partition size limit.
+  MBR and GPT are disk mapping table formats. MBR (Master Boot Record) is an older format that can only support up to 4 primary partitions, one of which can be an extended partition. GPT (GUID Partition Table) is a newer format that can support up to 128 partitions and has no partition size limit.
   
   5. В чому суть операції монтування, для чого вона потрібна?
   
-    A mount operation is the process of connecting an external storage device, such as a USB flash drive or external hard drive, to the operating system's file system. The connected device becomes readable and writable by the operating system, and operations can be performed on files stored on the device. Mounting also allows you to remove an external device safely, during which the operating system closes all open files and transfers control back to the external device before shutting down.
+  A mount operation is the process of connecting an external storage device, such as a USB flash drive or external hard drive, to the operating system's file system. The connected device becomes readable and writable by the operating system, and operations can be performed on files stored on the device. Mounting also allows you to remove an external device safely, during which the operating system closes all open files and transfers control back to the external device before shutting down.
 
 ### Хід роботи
 
