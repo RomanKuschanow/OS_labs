@@ -100,8 +100,70 @@ Lab 11: Basic Scripting та Lab 12: Understanding Computer Hardware.
 - сценарій має виводити привітання до поточного користувача вказуючи поточну дату та інформацію
 про поточну систему;
 
+Create a new file with the .sh extension in any folder on your system and open it in a text editor (for example, using the "nano" command in a terminal):
+
+nano greeting.sh
+Paste the following code into this file:
+#!/bin/bash
+
+Get the name of the current user
+
+USER=$(whoami)
+
+Get the current date and time
+
+DATE=$(date + "%A, %d %B %Y, %T")
+
+Get information about the current system
+
+SYSTEM=$(uname -a)
+
+Print a greeting to the user with the date and information about the system
+
+echo "Hello, $USER! Today is $DATE."
+echo "You are using the system: $SYSTEM"
+
+Now, to execute this script, you need to open a terminal and navigate to the folder where you saved the file. Enter the following command to give the file permission to execute:
+
+chmod +x greeting.sh
+
+Now run the script by entering the following command in the terminal:
+
+./greeting.sh
+
+
 - сценарій має виводити інформацію про апаратну конфігурацію поточної системи (використовуйте
-команди розглянуті в Lab 12).- 
+команди розглянуті в Lab 12).
+
+
+Створіть новий файл з розширенням .sh у будь-якій папці на вашій системі та відкрийте його в текстовому редакторі:
+
+nano hardware-info.sh
+Вставте наступний код в цей файл:
+
+#!/bin/bash
+
+Get information about the processor
+
+echo "=== Processor information ==="
+lscpu | grep "Model name"
+lscpu | grep "Architecture"
+lscpu | grep "CPU(s)"
+
+Get information about the RAM
+
+echo "=== RAM information ==="
+free -h
+
+Get information about the hard disk
+
+echo "=== Hard disk information ==="
+lsblk
+
+Get information about the video card
+
+echo "=== Video card information ==="
+lspci | grep -i vga
 
 
 ### Контрольні запитання
