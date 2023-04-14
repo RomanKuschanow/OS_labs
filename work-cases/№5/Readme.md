@@ -7,7 +7,7 @@
 
 1. При роботі з персональним комп’ютером дуже часто виникає необхідність підключати периферійне обладнання. На прикладі принтера та флешки опишіть який механізм має ОС Linux для роботи з ними.
 
->Готував студент Штома Д.О.
+>Готував студент Штома Д.О. та Путін М.Г.
 
   - В чому суть операції монтування, для чого вона використовується та як?
   
@@ -31,4 +31,12 @@ Mounting is used to provide access to an external device from the operating syst
  
 2. Підключіть до вашої віртуальної машини зі встановленою ОС Linux флешку та принтер (за можливості) та через графічний інтерфейс скопіюйте один файл з флешки на віртуальну машину та роздрукуйте його (такі ж самі дії повторіть, але з іншим файлом через команди в терміналі).
 
->Готував студент Путін М.Г. та Кушанов Р.Г.
+>Готував студент Кушанов Р.Г.
+
+![](https://i.imgur.com/KC7l4AI.png)
+
+To access the virtual machine to an external device, you need to select the desired devices in the usb settings, then it will be possible to access them from the child system
+
+![](https://i.imgur.com/mDY8xvd.png)
+
+Similarly, you can view the contents through the terminal
