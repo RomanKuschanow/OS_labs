@@ -72,8 +72,18 @@
 
 |  Назва команди  |  Її призначення та функціональність  |
 |:----------------|-------------------------------------:|
-|`su`||
-|`ls /proc`||
+|`su`| is used to change the current user to root user |
+|`ls /proc`| is used to list the contents of the /proc directory |
+|`sleep`| is typically used to pause a program (shell script) for a specific period of time|
+|`pkill`|command to terminate the remaining sleep command|
+|`ifconfig`| used to determine your Internet Protocol (IP) address |
+|`route`| used to view the table of routing information |
+|`ping`| used to tell if a system is presently connected to a network |
+|`dig localhost.localdomain`| used to resolve the localhost.localdomain name to an IP address |
+|`netstat`| performs a large variety of tasks related to networking |
+|`ss`| used to view which connections are currently established between the local machine and remote machines, statistics about those connections |
+
+
 
 2. Виконайте практичні завдання у терміналі (продемонструйте скріншоти):
 
@@ -99,9 +109,18 @@
  
 >Готував студент Путін М.Г.
 
-7. Поясніть призначення команд ping, ifconfig, traceroute.
-8. Як називаються мережеві інтерфейси в Linux?
-9. Як за допомогою команди ifconfig вивести параметри тільки одного мережевого інтерфейсу (наприклад, eth1), а не всіх?
+7. Поясніть призначення команд ping, ifconfig, traceroute.  
+   - The ping command is used to test the connectivity between two networked devices by sending ICMP echo request packets to the destination and waiting for the ICMP echo reply packets from the destination. This helps in verifying if the network connection is active, and if there are any packet losses or network latency issues.  
+   - The ifconfig (interface configuration) command is used to display and configure the network interfaces of a system. It displays the IP address, netmask, and other parameters of the network interfaces. With ifconfig, you can configure network interfaces manually or enable/disable them, set up the IP address and network masks, and so on.  
+   - The traceroute command is used to trace the route that a packet takes from the source to the destination device. It sends ICMP echo request packets with increasing TTL (time-to-live) values, and records the IP address of each device that the packet passes through before reaching the destination. This helps in identifying network connectivity issues and network congestion.
+
+
+8. Як називаються мережеві інтерфейси в Linux?  
+  In Linux, network interfaces are named based on the interface type, followed by a number. For example, Ethernet interfaces are named eth0, eth1, eth2, etc. Wi-Fi interfaces are named wlan0, wlan1, wlan2, etc. Loopback interfaces are named lo.
+
+9. Як за допомогою команди ifconfig вивести параметри тільки одного мережевого інтерфейсу (наприклад, eth1), а не всіх?  
+  To display the parameters of only one network interface (for example, eth1) using ifconfig, you can use the following command: `ifconfig eth1`  
+  This will display the IP address, netmask, and other parameters of the eth1 interface. If the interface is not currently active, the output will show only the hardware address (MAC address) of the interface.
 
 >Висновок:
 >>Готував студент Штома Д.О.
