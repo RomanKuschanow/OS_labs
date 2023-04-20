@@ -252,6 +252,7 @@ show routing information:
 
 >Висновок:
 >>Готував студент Штома Д.О.
->
->
+
+>In the course of this work, we have researched and worked out examples of using various Linux commands. We examined commands such as cat, dig, netstat, su, ls, sleep, pkill, ifconfig, route, ping, and ss. In the process, we found out the purpose and capabilities of these commands, their parameters, and examples of use.
+>We also investigated the cat and tac commands, their general purpose and usage features, and examined the ps --forest and pstree commands. Our study also included a look at network interfaces in Linux, as well as the ping, ifconfig, and traceroute commands.
 
