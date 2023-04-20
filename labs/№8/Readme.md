@@ -40,29 +40,52 @@
 
 | Термін англійською | Термін українською |
 |:-------------------|-------------------:|
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
+|implementation      |        впровадження|
+|kernel              |                ядро|
+|management          |          управління|
+|hierarchy           |            ієрархія|
+|guideline           |         керівництво|
+|governed            |           керований|
+|allocating          |           виділення|
+|addressing          |           адресація|
+|executing           |           виконання|
+|produce             |           виробляти|
 
 2. Дайте відповіді на наступні питання: 
 
 >Готував студент Кушанов Р.Г.
 
   - Розкрийте поняття “псевдо файлової системи”, для чого воно потрібно системі?
-  - Чому користувачі не так часто звертаються на пряму до каталогу /proc, яким чином з нього можна отримати інформацію?
-  - Яке призначення файлів /proc/cmdline, /proc/meminfo та /proc/modules?
+  
+    A pseudo file system is a type of file system that does not contain actual data on a physical storage device. Instead, it provides an interface for accessing various system resources, such as processes, memory usage, and network statistics, through a file-like structure. It is necessary for the system because it allows processes and applications to access and modify system information in a standardized and consistent way, without needing to implement specific system calls for each resource.
+  
+  - Чому користувачі не так часто звертаються на пряму до каталогу `/proc`, яким чином з нього можна отримати інформацію?
+  
+    Users do not frequently access the `/proc` directory directly because it contains system information in a non-human-readable format, with files and directories representing different aspects of the system. Information can be obtained from it using command-line utilities such as ps, top, and free, which provide summarized information on processes, resource usage, and system memory. Additionally, the contents of specific files in `/proc`, such as `/proc/cmdline` and `/proc/meminfo`, can be accessed directly to obtain more detailed information.
+  
+  - Яке призначення файлів `/proc/cmdline`, `/proc/meminfo` та `/proc/modules`?
+  
+    The file `/proc/cmdline` contains the kernel command line parameters that were used to boot the system, including options such as the root file system and kernel parameters. The file `/proc/meminfo` provides information on the system's memory usage, including total memory, free memory, and usage by various system components. The file `/proc/modules` lists the currently loaded kernel modules and their dependencies.
+  
   - Яке призначення команди free?
+  
+    The free command is a utility that provides information on the system's memory usage, including total memory, free memory, and usage by various system components. It can be used to diagnose memory issues, identify memory-hungry processes, and monitor system performance.
+  
   - Для чого потрібні лог-файли, наведіть приклади їх застосування?
-  - Яке призначення файлу /var/log/dmesg?
-  - Для чого розроблено FHS?
+  
+    Log files are files that record system events, errors, and messages, which can be used for debugging, monitoring, and auditing purposes. Examples of their use include system logs such as /var/log/syslog, which records general system events and errors, and application logs, such as Apache web server logs, which record requests, errors, and other information related to web server activity.
+  
+  - Яке призначення файлу `/var/log/dmesg`?
+  
+    The file `/var/log/dmesg` contains the output of the kernel's ring buffer, which records system messages during boot time and other kernel events. It can be used to diagnose system issues, identify hardware problems, and monitor system performance.
+  
+  - Для чого розроблено `FHS`?
+  
+    The Filesystem Hierarchy Standard (`FHS`) is a standard that defines the organization and layout of file systems in Linux and other Unix-like systems. It was developed to provide a standardized and consistent file system structure across different Linux distributions, simplifying software development and management, and ensuring compatibility across different systems.
+  
   - Які основні команди є у Linux для перегляду та конфігурації мережі
+  
+    Some of the main commands in Linux for viewing and configuring the network include `ifconfig`, `ip`, and `netstat`. `ifconfig` is used to configure network interfaces, view their settings, and check their status. `ip` is a more advanced utility that provides more detailed information on network interfaces and their configuration, routing tables, and other networking information. netstat provides information on network connections and socket information, including listening ports and active connections. Other useful commands include `ping`, `traceroute`, and `nslookup`, which are used for network testing and troubleshooting.
 
 ### Хід роботи
 
@@ -100,12 +123,29 @@
 
 >Готував студент Кушанов Р.Г.
 
-1. Як пов&#39;язані між собою команди cat та tac?
-2. Що робить команда ss?
-3. В чому відмінність між командами ps --forest та pstree?
+1. Як пов'язані між собою команди `cat` та `tac`?
+
+   The commands `cat` and `tac` are related in that they both read and display the contents of files. However, the main difference between them is the order in which they display the contents. The cat command displays the contents of a file from beginning to end, while the tac command displays the contents of a file from end to beginning.
+
+2. Що робить команда `ss`?
+
+   The `ss` command is a utility used to display information about active network connections, listening ports, and sockets. It is similar to the netstat command, but provides more detailed information and is generally faster and more efficient.
+
+3. В чому відмінність між командами `ps --forest` та `pstree`?
+
+   The `ps --forest` command displays the process tree in a hierarchical format, showing the relationships between parent and child processes. The `pstree` command does the same thing, but displays the process tree in a more visually-appealing format using ASCII characters.
+
 4. У яких каталогах зберігаються налаштування системи?
+
+   System settings are stored in various directories, depending on the specific setting and the Linux distribution being used. Some common directories for system settings include `/etc`, `/usr/share`, `/var`, and `/usr/lib`.
+
 5. У яких каталогах можна знайти встановлені в системі програми, доступні для користувача?
+
+   Installed programs available to the user can be found in directories such as `/usr/bin`, `/usr/local/bin`, and `/opt`.
+
 6. У яких каталогах можна знайти встановлені системні програми і програми призначені для виконання суперкористувачем?
+
+   System programs and programs intended for superuser execution can be found in directories such as `/bin`, `/sbin`, `/usr/sbin`, and `/usr/libexec`. These directories typically contain system utilities and important system executables that are required for the proper functioning of the system.
  
 >Готував студент Путін М.Г.
 
