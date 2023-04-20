@@ -108,15 +108,103 @@
 
 
 
-2. Виконайте практичні завдання у терміналі (продемонструйте скріншоти):
+2. Виконайте практичні завдання у терміналі:
 
 >Готував студент Штома Д.О.
 
   - в даній лабораторній роботі використовувалась команда cat, дослідіть її можливості та опишіть для яких задач вона призначена;
+  
+  The cat command (short for "concatenate") is a standard Unix/Linux command that is designed to display, create, copy, and merge text files. The main features of the command include:
+  
+    1. displaying the contents of files;
+    2. creating new files;
+    3. redirecting the contents of one file to another;
+    4. merge several files into one.
+  
+  
   - продемонструйте приклади, коли команда cat використовується для створення файлу, перегляду вмісту файлу, перенаправлення інформації у інший файл, склеювання декількох файлів в один;
+  
+  Examples of using the cat command:
+
+creating a file:
+
+     cat > newfile.txt Hello, world! (press Ctrl + D to complete the input)
+
+view the contents of the file:
+
+       cat newfile.txt
+
+redirect information to another file:
+
+       cat newfile.txt > anotherfile.txt
+
+combine several files into one:
+
+       cat file1.txt file2.txt > mergedfile.txt
+  
+  
   - які параметри команди cat треба використати, щоб пронумерувати рядки файлу, відобразити недруковані символи, видалити порожні рядки?
-  - опишіть можливості команди dig та наведіть приклади;
+  
+  The parameters of the cat:
+  
+number the lines of the file:
+
+     cat -n filename.txt
+
+display unprintable characters:
+
+     cat -v filename.txt
+
+remove empty lines:
+
+     cat -s filename.txt
+   
+  - описати можливості команди dig і навести приклади;
+  
+  The dig command (short for "Domain Information Groper") is a useful tool for obtaining information about DNS records. It allows you to make DNS queries and receive responses from DNS servers.
+
+
+An example of using the dig command:
+
+
+     dig example.com
+
+  
   - опишіть можливості команди netstat та наведіть приклади;.
+
+
+ The netstat command (short for Network Statistics) allows you to monitor network and connection statistics. You can view active connections, listening ports, network protocol statistics, and more.
+ 
+Examples of using the netstat command:
+
+To view active connections:
+
+     netstat -a
+     
+to view the listened ports:
+
+
+     netstat -l
+
+view statistics of network protocols:
+
+
+     netstat -s
+     
+show processes related to active connections:
+
+
+     netstat -p
+     
+view active connections with addresses displayed in character format:
+
+
+     netstat -n
+     
+show routing information:
+
+
+     netstat -r
 
 
 ### Контрольні запитання
