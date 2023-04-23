@@ -78,7 +78,63 @@ After running these commands, you will need to log out of the current session an
 - Founders (керівництво);
 - Guests (гості).
 
+To create new users and assign them to groups, you first need to create the appropriate groups, and then create users and add them to the appropriate groups. Here's how to do it:
 
+Create groups:
+
+      sudo groupadd techsupport
+      sudo groupadd developers
+      sudo groupadd financiers
+      sudo groupadd founders
+      sudo groupadd guests
+
+Create users and add them to the appropriate groups:
+
+      # techsupport
+      sudo useradd -m -G techsupport user1
+      sudo useradd -m -G techsupport user2
+
+      # Developers
+      sudo useradd -m -G developers user3
+      sudo useradd -m -G developers user4
+      sudo useradd -m -G developers user5
+
+      # Financiers
+      sudo useradd -m -G financiers user6
+      sudo useradd -m -G financiers user7
+
+      # Founders
+      sudo useradd -m -G founders user8
+      sudo useradd -m -G founders user9
+
+      # Guests
+      sudo useradd -m -G guests user10
+
+Set passwords for new users:
+
+      sudo passwd user1
+      sudo passwd user2
+      sudo passwd user3
+      sudo passwd user4
+      sudo passwd user5
+      sudo passwd user6
+      sudo passwd user7
+      sudo passwd user8
+      sudo passwd user9
+      sudo passwd user10
+      
+Check the groups to which the users belong:
+
+      groups user1
+      groups user2
+      groups user3
+      groups user4
+      groups user5
+      groups user6
+      groups user7
+      groups user8
+      groups user9
+      groups user10
 
 3. Для кожного з користувачів визначити його командний інтерпретатор за замовчуванням:
 
@@ -90,7 +146,32 @@ After running these commands, you will need to log out of the current session an
 - Founders – командний інтерпретатор 2 (завдання 1);
 - Guests – заборонити доступ до командних інтерпретаторів.
 
+Use the following commands to set the default command prompt for users. In this example, we are using zsh as command prompt 1 and fish as command prompt 2:
 
+Technical support - bash:
+
+        sudo usermod -s /bin/bash user1
+        sudo usermod -s /bin/bash user2
+        
+Developers - command prompt 1 (zsh):
+
+        sudo usermod -s /bin/zsh user3
+        sudo usermod -s /bin/zsh user4
+        sudo usermod -s /bin/zsh user5
+        
+Financiers - deny access to command prompts (use /usr/sbin/nologin to deny entry):
+
+        sudo usermod -s /usr/sbin/nologin user6
+        sudo usermod -s /usr/sbin/nologin user7
+        
+Founders - command prompt 2 (fish):
+
+        sudo usermod -s /bin/fish user8
+        sudo usermod -s /bin/fish user9
+        
+Guests - deny access to command prompts (use /usr/sbin/nologin to deny entry):
+
+        sudo usermod -s /usr/sbin/nologin user10
 
 4. Продемонструвати приклади роботи кожної групи користувачів у своєму командному інтерпретаторі – наприклад збір відомостей про систему, визначення базової конфігурації, системної дати, поточних каталогів тощо.
 
