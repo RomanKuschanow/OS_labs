@@ -180,6 +180,60 @@ Guests - deny access to command prompts (use /usr/sbin/nologin to deny entry):
 
 >Готував студент Путін М.Г.
 
+Let's show examples of how each user group works in its own command prompt.
 
+Technical support (bash):
+
+Gather information about the system:
+
+      uname -a
+
+Defining the basic configuration:
+
+      lshw
+
+System date:
+
+      date
+
+Current directory:
+
+      pwd
+
+Developers (zsh):
+
+Gather information about the system:
+
+      uname -a.
+
+Defining the basic configuration:
+
+      lshw
+
+System date:
+
+      date
+
+Current directory:
+
+      pwd
+
+Founders (fish):
+
+Collects information about the system:
+
+      uname -a.
+
+Defining the basic configuration:
+
+      lshw
+
+System date:
+
+      date
+
+Current directory:
+
+      pwd
 
 
