@@ -77,26 +77,121 @@
 
   - виведіть інформацію про поточного користувача різними способами (підказка використовуйте
   команди id та grep);
+  
+      id
+      whoami
+      id -un
+      grep "^$(whoami):" /etc/passwd
+  
   - попрактикуйте в терміналі команди last, w та who. Порівняйте результати виводу кожної команди,
   які деталі відсутні в кожній із команд порівняно з іншими?
+  
+      last
+      w
+      who
+      
+    Команда last показує історію входів користувачів, w показує поточних користувачів та їхню активність, а who просто відображає поточних користувачів.
+  
   - створіть дві нові групи користувачів - super_admins, noob_users та good_students, визначте їх
   ідентифікатори;
+  
+     sudo groupadd super_admins
+     sudo groupadd noob_users
+     sudo groupadd good_students
+
+     grep "super_admins" /etc/group
+     grep "noob_users" /etc/group
+     grep "good_students" /etc/group
+
+  
+  
   - для кожного члену Вашої команди за допомогою терміналу створіть нового користувача (якщо
   працюєте самі, то просто трьох довільних користувачів), не забудьте після створення нового
   користувача одразу задати йому пароль;
+  
+     sudo useradd user1
+     sudo passwd user1
+
+     sudo useradd user2
+     sudo passwd user2
+
+     sudo useradd user3
+     sudo passwd user3
+
+  
   - додайте нових користувачів у створені Вами нові групи таким чином, щоб у групах super_admins та
   noob_users було по 2 користувачі, один з яких є в обох групах, у групу good_students додайте всіх
   трьох користувачів;
+  
+     sudo usermod -aG super_admins user1
+     sudo usermod -aG noob_users user1
+
+     sudo usermod -aG super_admins user2
+     sudo usermod -aG noob_users user3
+
+     sudo usermod -aG good_students user1
+     sudo usermod -aG good_students user2
+     sudo usermod -aG good_students user3
+
+  
+  
   - перегляньте інформацію про групи, та які користувачі до них входять, поясніть що ви бачите;
+  
+     grep "super_admins" /etc/group
+     grep "noob_users" /etc/group
+     grep "good_students" /etc/group
+
+  
   - видаліть першого створеного вами користувача, перегляньте чи залишиться інформація про нього в
   групах, де він перебував;
+ 
+     sudo userdel user1
+
+     grep "super_admins" /etc/group
+     grep "noob_users" /etc/group
+     grep "good_students" /etc/group
+
+
+ 
   - видаліть другого користувача, перегляньте чи залишиться інформація про нього в групах, де він
   перебував;
+  
+     sudo userdel user2
+
+     grep "super_admins" /etc/group
+     grep "noob_users" /etc/group
+     grep "good_students" /etc/group
+
+
+
+  
   - видаліть третього користувача, перегляньте чи залишиться інформація про нього в групах, де він
   перебував;
+  
+     sudo userdel user3
+
+     grep "super_admins" /etc/group
+     grep "noob_users" /etc/group
+     grep "good_students" /etc/group
+
+  
   - перегляньте інформацію про існуючі групи користувачів;
+ 
+    cat /etc/group
+
+ 
   - видаліть створені Вами групи користувачів;
+  
+    sudo groupdel super_admins
+    sudo groupdel noob_users
+    sudo groupdel good_students
+
+  
+  
   - перегляньте інформацію про існуючі групи користувачів.
+  
+       cat /etc/group
+
 
 ### Контрольні запитання
 
