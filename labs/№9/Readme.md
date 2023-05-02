@@ -79,7 +79,22 @@
 
 |  Назва команди  |  Її призначення та функціональність  |
 |:----------------|-------------------------------------:|
-|||
+|`su`| used to switch users and start a new shell as root user |
+|`sudo`|used to execute a single command as the root user by prefixing that command |
+|`exit`| used to logout of root user |
+|`head /etc/passwd` | shows detailed information about users, including encrypted password and password policy |
+|`getent passwd username`| used to retrieve the account information for a user |
+|`w`| used to get a more detailed view of the users who are currently on your system |
+|`last`| used to display all logins and reboot records |
+|`groupadd`| used to create a new group |
+|`groupmod`| used to make changes to groups |
+|`useradd`| used to create a new user |
+|`passwd`| used to set and reset a user's password |
+|`usermod`| used to make changes to the user account |
+|`groupdel`| used to delete either of the groups, as long as neither of them have been made the primary group for a user |
+|`getent group *groupname*`| used to retrieve to retrieve information about the group |
+|`userdel`| used to delete a user account |
+
 
 
 
